@@ -30,7 +30,7 @@ print(sports.setdefault('john', 'drake'))
 print(sports.setdefault('drake', 'marathon'))
 print(sports)
 # this adds this new element to the dict as this key doesn't exit in the dict
-#update method update a key value if dont exit in the dict
-fruit = {1:'mango',2:'orange',3:'pear'}
+# update method update a key value if you don't exit in the dict
+fruit = {1: 'mango', 2: 'orange', 3: 'pear'}
 sports.update(fruit)
 print(sports)
