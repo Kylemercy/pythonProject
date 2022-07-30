@@ -45,7 +45,7 @@ print(len(sports))
 # sorted method
 # prints the list of the key in ordered formaT
 print(sorted(sports))
-print(sorted(sports,reverse= True))
+print(sorted(sports, reverse=True))
 # using the key parameter of sorted method
-print(sorted(sports,key = len))
+print(sorted(sports, key=len))
 # this sort the dict based on their length
