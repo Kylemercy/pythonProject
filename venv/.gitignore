@@ -1,0 +1,37 @@
+# created
+.isshst
+.regtrams-ms
+ pycodes/
+        pythonProject/
+
+  -1.14-windows.xml
+        .bash_history
+        .gitconfig
+        .gnupg/
+        .idlerc/
+        .lesshst
+        3D Objects/
+        AppData/
+        Contacts/
+        Desktop/
+        Documents/
+        Downloads/
+        Favorites/
+        IntelGraphicsProfiles/
+        Links/
+        MediaGet2/
+        MicrosoftEdgeBackups/
+        Music/
+        NTUSER.DAT
+        NTUSER.DAT{36b0b490-01e5-11ed-8a1b-e4f89ca30cd2}.TM.blf
+        NTUSER.DAT{36b0b490-01e5-11ed-8a1b-e4f89ca30cd2}.TMContainer00000000000000000001.regtrans-ms
+        NTUSER.DAT{36b0b490-01e5-11ed-8a1b-e4f89ca30cd2}.TMContainer00000000000000000002.regtrans-ms
+        OneDrive/
+        Pictures/
+        PycharmProjects/
+        Saved Games/
+        Searches/
+        Videos/
+        ntuser.dat.LOG1
+        ntuser.dat.LOG2
+        ntuser.ini
