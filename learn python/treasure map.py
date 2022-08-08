@@ -8,5 +8,7 @@ vertical = int(position[1])
 horizontal = int(position[0])
 selected_row = treasure_map[vertical - 1]
 selected_row[horizontal - 1] = 'X'
+# another fomat for the above code
+# map[vertical-1][horizontal-1] = ' X'
 
 print(f"{row1}\n{row2}\n{row3}")
