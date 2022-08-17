@@ -13,4 +13,4 @@ def decimal_binary(num):
 
 num = int(input('Enter your binary number: '))
 binary = decimal_binary(num)
-print('Your decimal in decimal is ', binary)
+print('Your binary in decimal is ', binary)
