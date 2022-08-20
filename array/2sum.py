@@ -5,7 +5,7 @@ def two_sum(num, target):
     hash_map = {}
     # dictionary difference values then index
     for i, n in enumerate(num):
-        # loop for esch element
+        # loop for each element
         difference = target - n
         if difference in hash_map:
             result.append(i)
