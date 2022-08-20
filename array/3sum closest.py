@@ -5,12 +5,12 @@ def threesum(num):
         # to avoid duplicates e do this
         if i > 0 and a == num[i - 1]:
             continue
-             # i here has a index of 1 this checks if the first and second num are thesame
+            # i here has an index of 1 this checks if the first and second num are the same
             # pointers
         l, r = i + 1, len(num) - 1
         while l < r:
             threesum = a + num[l] + num[r]
-           # a = value of i
+            # a = value of i
             if threesum > 0:
                 r -= 1
             elif threesum < 0:
@@ -23,5 +23,6 @@ def threesum(num):
                     l += 1
     return res
 
-num = [-1,0,1,2,-1,-4]
+
+num = [-1, 0, 1, 2, -1, -4]
 print(threesum(num))
