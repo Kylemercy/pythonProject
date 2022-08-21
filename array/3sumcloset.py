@@ -10,6 +10,8 @@ def threesum(num, target):
         l, r = i + 1, n - 1
         while l < r:
             cur_sum = num[i] + num[l] + num[r]
+            if closet == target:
+                return closet
             if cur_sum <= closet:
                 l += 1
             else:
