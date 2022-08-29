@@ -18,7 +18,7 @@ class slinkedlist:
 
     def insertsinglylist(self, value, location):
         newnode = Node(value)
-        if self.head == None:
+        if self.head is None:
             self.head = newnode
             self.tail = newnode
         # inserting at the beginning of a linked list
@@ -27,16 +27,33 @@ class slinkedlist:
                 newnode.next = self.head
                 self.head = newnode
             # inserting at the end of the linked list
-            elif location == -1:
+            elif location == 1:
                 newnode.next = None
                 self.tail.next = newnode
                 self.tail = newnode
             #inserting at the middle
-            tempnode = self.head
-            index = 0
-            while index < location - 1:
-                tempnode = tempnode.next
-                index += 1
+
+            else:
+                tempnode = self.head
+                count = 0
+                while count < location - 1:
+                    tempnode = tempnode.next
+                    count += 1
                 nextnode = tempnode.next
-                newnode = tempnode.next
+                tempnode.next = newnode
                 newnode.next = nextnode
+
+    def list_travasal(self):
+        if self.head is None:
+            print('list is empty')
+        cur_node = self.head
+        while cur_node:
+            print(cur_node.value)
+            cur_node = cur_node.next
+ll = slinkedlist()
+ll.insertsinglylist(0,1)
+ll.insertsinglylist(1,2)
+ll.insertsinglylist(2,3)
+ll.insertsinglylist(3,4)
+ll.insertsinglylist(4,5)
+print([node.value for node in ll])
