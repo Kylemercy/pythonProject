@@ -37,7 +37,7 @@ class Linkedlist:
         return result
 
     # create a method that adds element to the end of the list
-    def add_end(self, value):
+    def add(self, value):
         if self.head is None:
             newnode = Node(value)
             self.head = newnode
@@ -53,7 +53,7 @@ class Linkedlist:
         self.head = None
         self.tail = None
         for i in range(n):
-            self.add_end(randint(min_value, max_value))
+            self.add(randint(min_value, max_value))
         return self
 
 
