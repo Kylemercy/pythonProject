@@ -12,7 +12,7 @@ class Node:
     # this makes our node printable
 
 
-class :
+class Linkedlist:
     def __init__(self, values=None):
         self.head = None
         self.tail = None
