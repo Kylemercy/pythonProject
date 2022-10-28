@@ -1,4 +1,4 @@
-# using a hashmap
+# using a hashmap 2sum
 def two_sum(num, target):
     result = []
     # list of stored result
