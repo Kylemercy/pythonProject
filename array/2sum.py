@@ -13,7 +13,7 @@ def two_sum(num, target):
             result.append(hash_map[difference])
         else:
             hash_map[n] = i
-            # adds the difference value and index to the dictionary
+            # adds the difference value and index to the dictionary after visiting each element
     return result
 
 
