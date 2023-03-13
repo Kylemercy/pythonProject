@@ -1,0 +1,11 @@
+1:food
+2:john
+3:sandy
+rabbit
+frog
+blue
+house
+church
+hospital
+president
+community
