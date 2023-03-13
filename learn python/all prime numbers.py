@@ -13,4 +13,4 @@ def all_primes(num):
 
 num = int(input('Enter a number: '))
 is_primes = all_primes(num)
-print(is_primes)
+print(f'All prime numbers within the given range of given number is:{is_primes}')
