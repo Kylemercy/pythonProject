@@ -3,11 +3,11 @@ logger = logging.getLogger(__name__)
 logging.basicConfig(filename='employee.log', level=logging.INFO, format='%(levelname)s: %(name)s: %(message)s')
 
 
-class employee:
+class Employee:
     def __init__(self, first, last):
         self.first = first
         self.last = last
-        logger.info(" Created employee fullname {self.fullname}-- email {self.email} ")
+        logger.info(" Created Employee fullname {self.fullname}-- email {self.email} ")
 
     @property
     def email(self):
@@ -18,4 +18,4 @@ class employee:
         return f'{self.first} {self.last}'
 
 
-name1 = employee('jinnny', 'han')
+name1 = Employee('jinnny', 'han')

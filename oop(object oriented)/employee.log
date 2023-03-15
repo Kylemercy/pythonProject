@@ -1,1 +1,1 @@
-INFO: __main__:  Created employee fullname {self.fullname}-- email {self.email} 
+INFO: __main__:  Created Employee fullname {self.fullname}-- email {self.email}

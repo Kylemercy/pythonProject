@@ -1,4 +1,4 @@
-class employee:
+class Employee:
     raise_amount = 1.04
     num_emp = 0
 
@@ -8,8 +8,8 @@ class employee:
         self.last = last
         self.pay = pay
         self.email = self.first + ',' + self.last + 'company.com'
-        employee.num_emp += 1
-        # we increase the num pf employee within the init method as this runs whenever we create a new employee
+        Employee.num_emp += 1
+        # we increase the num pf Employee within the init method as this runs whenever we create a new Employee
 
     def fullname(self):
         return self.first + ' ' + self.last
@@ -19,12 +19,12 @@ class employee:
         self.pay = int(self.pay * self.raise_amount)
 
 
-emp_1 = employee('max', 'smith', 3000)
-emp_2 = employee('john', 'walker', 6000)
+emp_1 = Employee('max', 'smith', 3000)
+emp_2 = Employee('john', 'walker', 6000)
 print(emp_1.email)
 print(emp_2.email)
 print(emp_2.fullname())
-print(employee.raise_amount)
+print(Employee.raise_amount)
 print(emp_1.__dict__)
 # prints all the attributes of emp1
-print(employee.num_emp)
+print(Employee.num_emp)

@@ -1,6 +1,6 @@
 # class method
 # to convert a regular method to a class method we add a class-method decorator
-class employee:
+class Employee:
     raise_amount = 1.04
     num_emp = 0
 
@@ -10,8 +10,8 @@ class employee:
         self.last = last
         self.pay = pay
         self.email = self.first + ',' + self.last + 'company.com'
-        employee.num_emp += 1
-        # we increase the num pf employee within the init method as this runs whenever we create a new employee
+        Employee.num_emp += 1
+        # we increase the num pf Employee within the init method as this runs whenever we create a new Employee
 
     def fullname(self):
         return self.first + ' ' + self.last
@@ -39,21 +39,21 @@ class employee:
             return 'Today is a workday'
 
 
-emp_1 = employee('max', 'smith', 3000)
-emp_2 = employee('john', 'walker', 6000)
+emp_1 = Employee('max', 'smith', 3000)
+emp_2 = Employee('john', 'walker', 6000)
 # to change the class variable from 4% to %%
-employee.set_raise_amount(1.05)
-print(employee.raise_amount)
+Employee.set_raise_amount(1.05)
+print(Employee.raise_amount)
 print(emp_1.raise_amount)
 emp1_str = 'sam-randy-5500'
 emp2_str = 'rew-goth-4600'
-new_emp1 = employee.string_format(emp1_str)
-new_emp2 = employee.string_format(emp2_str)
+new_emp1 = Employee.string_format(emp1_str)
+new_emp2 = Employee.string_format(emp2_str)
 print(emp_1.fullname())
 print(emp_1.first)
 import datetime
 
 my_date = datetime.date(2019, 4, 23)
-print(employee.is_workday(my_date))
+print(Employee.is_workday(my_date))
 my_date2 = datetime.date(2023, 3, 18)
-print(employee.is_workday(my_date2))
+print(Employee.is_workday(my_date2))
